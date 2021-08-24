@@ -48,7 +48,7 @@ app.use(passport.session()); // Inicializa la session de express con passport
 app.use(flash()); // Inicializa connect-flash
 
 
-// Global Variables - Middleware propio.
+// Global Variables - Middleware propio
 app.use((req, res, next) => {
   res.locals.success_msg = req.flash("success_msg"); // Variable global "success_msg" en todo el REQuest.flash 
   res.locals.error_msg = req.flash("error_msg"); // Variable global "error_msg" en todo el REQuest.flash 
